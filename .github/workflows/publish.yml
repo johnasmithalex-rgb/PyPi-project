@@ -8,11 +8,13 @@ jobs:
     environment: pypi
     permissions:
       id-token: write
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - run: pip install hatchling hatch
-      - run: python -m hatch build
+      - run: pip install build
+      - run: python -m build
       - uses: pypa/gh-action-pypi-publish@release/v1
