@@ -1,0 +1,9 @@
+name = "instagram-unfollow-tracker"
+version = "0.1.0"
+description = "Simple way to check who unfollowed you on Instagram"
+readme = "README.md"
+license = {text = "MIT"}
+keywords = ["instagram", "unfollow", "tracker"]
+
+[project.urls]
+Homepage = "https://igunfollowtracker.com"
